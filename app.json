@@ -1,0 +1,31 @@
+{
+  "name": "MetubeHeroku",
+  "description": "MetubeHeroku",
+  "logo": "https://img.icons8.com/nolan/344/youtube-squared.png",
+  "keywords": ["yt-dlp", "heroku", "ytdl", "web", "herokuweb", "safe", "yt-dl", "yt-dlp", "no-password", "oneclickdeploy", "deploy-to-heroku", "docker"],
+  "env": {
+      "YTDL_OPTIONS": {
+      "description": "Additional options to pass to youtube-dl, in JSON format. See available options here.(https://github.com/yt-dlp/yt-dlp/blob/master/yt_dlp/YoutubeDL.py#L176) They roughly correspond to command-line options, though some do not have exact equivalents here, for example --recode-video has to be specified via postprocessors. Also note that dashes are replaced with underscores.",
+      "value": ""
+    },
+      "DOWNLOAD_DIR": {
+      "description": "path to where the downloads will be saved. Defaults to /downloads in the docker image, and . otherwise.",
+      "value": ""
+    },
+      "AUDIO_DOWNLOAD_DIR": {
+      "description": "path to where audio-only downloads will be saved, if you wish to separate them from the video downloads. Defaults to the value of DOWNLOAD_DIR.",
+      "value": ""
+    },
+      "URL_PREFIX": {
+      "description": "base path for the web server (for use when hosting behind a reverse proxy). Defaults to /.",
+      "value": ""
+    },
+      "OUTPUT_TEMPLATE": {
+      "description": "the template for the filenames of the downloaded videos, formatted according to this spec(https://github.com/yt-dlp/yt-dlp/blob/master/README.md#output-template). Defaults to %(title)s.%(ext)s.",
+      "value": ""
+
+  },
+  "website": "https://avasthi-git.github.io",
+  "repository": "https://github.com/avasthi-git/metube",
+  "stack": "container"
+ }
