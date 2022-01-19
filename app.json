@@ -1,0 +1,31 @@
+{
+    "name": "MetubeHeroku",
+    "description": "MetubeHeroku",
+    "keywords": [
+        "yt-dlp",
+        "yt-dl",
+        "ytdlp",
+        "ytdl",
+        "heroku",
+        "docker",
+        "dockerfile",
+        "free",
+        "metube"
+    ],
+    "repository": "https://github.com/avasthi-git/metube",
+    "website": "https://avasthi-git.github.io",
+    "success_url": "https://avasthi-git.github.io",
+    "env": {
+        "YTDL_OPTIONS": {
+            "description": "",
+            "required": "False"
+        }
+    },
+    "stack": "container",
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
